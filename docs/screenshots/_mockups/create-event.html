@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+  .grid2 { display:grid; grid-template-columns: 1fr 1fr; gap: 0 22px; }
+  .grid3 { display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 22px; }
+  .seg { display:flex; gap:10px; }
+  .seg div { flex:1; text-align:center; padding:10px; border-radius:10px; border:1.5px solid var(--line); font-weight:600; font-size:14px; color:var(--muted); }
+  .seg div.on { border-color: var(--green); background:#eaf7f0; color: var(--green); }
+  .upload { border: 2px dashed #cdd9de; border-radius: 12px; padding: 26px; text-align:center; color: var(--muted); font-size: 14px; }
+</style></head>
+<body><div class="page">
+  <div class="appbar">
+    <div class="brand"><div class="logo"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21s-7.5-4.6-10-9.3C.3 8 2 4.5 5.3 4.5c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.5 19.7 8 18 11.7 15.5 16.4 12 21 12 21z"/></svg></div><div class="word">Volunteer</div></div>
+    <div class="navlinks"><a>Admin Profile</a><a>Volunteer History</a><a>Dashboard</a><a class="active">Events</a><a>About</a><a>Contact</a></div>
+    <div class="appbar-right"><div class="avatar" style="background:#22577a">HF</div><div class="logout">Logout</div></div>
+  </div>
+  <div class="content">
+    <div class="h1">Create event</div>
+    <div class="sub">Post a new opportunity — volunteers will be matched by skills, schedule and distance.</div>
+    <div class="card pad" style="margin-top:18px;max-width:980px">
+      <div class="field"><span class="label">Event name</span><div class="input">Community Food Drive</div></div>
+      <div class="field"><span class="label">Description</span><div class="input" style="height:78px;color:#46606d">Help sort and distribute groceries to families. Great for groups; lifting involved.</div></div>
+      <div class="grid3">
+        <div class="field"><span class="label">Date</span><div class="input">2026-06-14</div></div>
+        <div class="field"><span class="label">Start time</span><div class="input">09:00</div></div>
+        <div class="field"><span class="label">End time</span><div class="input">13:00</div></div>
+      </div>
+      <div class="grid2">
+        <div class="field"><span class="label">Street address</span><div class="input">535 Portwall St</div></div>
+        <div class="field"><span class="label">City</span><div class="input">Houston</div></div>
+      </div>
+      <div class="grid3">
+        <div class="field"><span class="label">State</span><div class="input">TX</div></div>
+        <div class="field"><span class="label">Zip code</span><div class="input">77029</div></div>
+        <div class="field"><span class="label">Capacity</span><div class="input">50</div></div>
+      </div>
+      <div class="field"><span class="label">Urgency</span>
+        <div class="seg"><div>Low</div><div>Medium</div><div class="on">High</div><div>Critical</div></div>
+      </div>
+      <div class="field"><span class="label">Required skills</span>
+        <div style="display:flex;flex-wrap:wrap;gap:8px"><span class="chip skill">Lifting ✕</span><span class="chip skill">Event Setup ✕</span><span class="chip skill">Driving ✕</span><span class="input placeholder" style="width:auto;padding:6px 12px;border-radius:999px">+ add skill</span></div>
+      </div>
+      <div class="field"><span class="label">Event image</span><div class="upload">⬆️ &nbsp;Drag &amp; drop or click to upload</div></div>
+      <div style="display:flex;justify-content:flex-end;gap:12px;margin-top:8px"><button class="btn ghost">Cancel</button><button class="btn">Create event</button></div>
+    </div>
+  </div>
+</div></body></html>

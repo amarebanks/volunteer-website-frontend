@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+  .evt { display:flex; justify-content:space-between; align-items:center; background:linear-gradient(135deg,#22577a,#38a3a5); color:#fff; padding:18px 22px; border-radius:14px; margin-top:18px; }
+  .evt .when { opacity:.9; font-size:13px; margin-top:3px; }
+  .vrow { display:flex; align-items:center; gap:16px; padding:14px 6px; border-bottom:1px solid var(--line); }
+  .vrow .a { width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; }
+  .vrow .skills { display:flex; gap:6px; margin-top:5px; flex-wrap:wrap; }
+  .why { font-size:12px; color:var(--muted); }
+</style></head>
+<body><div class="page">
+  <div class="appbar">
+    <div class="brand"><div class="logo"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21s-7.5-4.6-10-9.3C.3 8 2 4.5 5.3 4.5c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.5 19.7 8 18 11.7 15.5 16.4 12 21 12 21z"/></svg></div><div class="word">Volunteer</div></div>
+    <div class="navlinks"><a>Admin Profile</a><a>Volunteer History</a><a>Dashboard</a><a class="active">Events</a><a>About</a><a>Contact</a></div>
+    <div class="appbar-right"><div class="avatar" style="background:#22577a">HF</div><div class="logout">Logout</div></div>
+  </div>
+  <div class="content">
+    <div class="h1">Volunteer matching</div>
+    <div class="sub">Best-fit volunteers scored by skills, schedule overlap and distance.</div>
+    <div class="evt">
+      <div><div style="font-size:18px;font-weight:700">Community Food Drive</div><div class="when">📅 Sat, Jun 14 · 9:00–13:00 · needs: Lifting, Event Setup, Driving</div></div>
+      <div style="text-align:right"><div style="font-size:13px;opacity:.85">Capacity</div><div style="font-size:20px;font-weight:700">32 / 50</div></div>
+    </div>
+    <div class="card pad" style="margin-top:18px">
+      <div class="vrow">
+        <div class="a" style="background:#26a96c">MG</div>
+        <div style="flex:1"><div style="font-weight:700">Maria González</div><div class="why">2.1 mi away · available Sat AM · matches Lifting, Event Setup, Driving</div><div class="skills"><span class="chip skill">Lifting</span><span class="chip skill">Event Setup</span><span class="chip skill">Driving</span></div></div>
+        <span class="score s90">96%</span>
+      </div>
+      <div class="vrow">
+        <div class="a" style="background:#38a3a5">AB</div>
+        <div style="flex:1"><div style="font-weight:700">Andre Boateng</div><div class="why">4.6 mi away · available Sat AM · matches Lifting, Event Setup</div><div class="skills"><span class="chip skill">Lifting</span><span class="chip skill">Event Setup</span></div></div>
+        <span class="score s90">91%</span>
+      </div>
+      <div class="vrow">
+        <div class="a" style="background:#22577a">PN</div>
+        <div style="flex:1"><div style="font-weight:700">Priya Nair</div><div class="why">7.0 mi away · available Sat AM · matches Event Setup, Driving</div><div class="skills"><span class="chip skill">Event Setup</span><span class="chip skill">Driving</span></div></div>
+        <span class="score s80">84%</span>
+      </div>
+      <div class="vrow">
+        <div class="a" style="background:#7a8b94">SC</div>
+        <div style="flex:1"><div style="font-weight:700">Sam Carter</div><div class="why">11.3 mi away · available Sat AM · matches Lifting</div><div class="skills"><span class="chip skill">Lifting</span></div></div>
+        <span class="score s0">73%</span>
+      </div>
+      <div class="vrow" style="border-bottom:none">
+        <div class="a" style="background:#9aa9b1">LW</div>
+        <div style="flex:1"><div style="font-weight:700">Liu Wei</div><div class="why">14.8 mi away · partial schedule overlap · matches Driving</div><div class="skills"><span class="chip skill">Driving</span></div></div>
+        <span class="score s0">61%</span>
+      </div>
+    </div>
+  </div>
+</div></body></html>

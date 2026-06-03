@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+  body { background: linear-gradient(135deg, #22577a 0%, #38a3a5 60%, #26a96c 120%); }
+  .wrap { width: 1280px; min-height: 860px; display: flex; align-items: center; justify-content: center; }
+  .auth { width: 440px; background:#fff; border-radius: 20px; padding: 38px 36px; box-shadow: 0 24px 60px rgba(0,0,0,.25); }
+  .auth .logo { width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 14px;
+    background: radial-gradient(circle at 35% 30%, var(--mint), var(--green)); display:flex; align-items:center; justify-content:center; }
+  .auth h1 { text-align:center; color: var(--navy); font-size: 26px; }
+  .auth p.s { text-align:center; color: var(--muted); margin: 6px 0 22px; font-size: 14px; }
+  .toggle { display:flex; background:#eef3f5; border-radius: 12px; padding: 5px; margin-bottom: 22px; }
+  .toggle div { flex:1; text-align:center; padding: 10px; border-radius: 9px; font-weight:600; font-size: 14px; color: var(--muted); }
+  .toggle div.on { background:#fff; color: var(--navy); box-shadow: 0 2px 6px rgba(0,0,0,.08); }
+  .auth .btn { width:100%; justify-content:center; margin-top: 6px; padding: 13px; }
+  .forgot { text-align:right; font-size: 13px; color: var(--teal); margin: -8px 0 16px; }
+  .foot { text-align:center; font-size: 14px; color: var(--muted); margin-top: 20px; }
+  .foot a { color: var(--green); font-weight:600; text-decoration:none; }
+</style></head>
+<body><div class="wrap"><div class="auth">
+  <div class="logo"><svg viewBox="0 0 24 24" width="34" height="34" fill="#fff"><path d="M12 21s-7.5-4.6-10-9.3C.3 8 2 4.5 5.3 4.5c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.5 19.7 8 18 11.7 15.5 16.4 12 21 12 21z"/></svg></div>
+  <h1>Welcome back</h1>
+  <p class="s">Sign in to find and manage volunteer opportunities</p>
+  <div class="toggle"><div class="on">🙋 Volunteer</div><div>🏢 Organization</div></div>
+  <div class="field"><span class="label">Email</span><div class="input">jordan.lee@email.com</div></div>
+  <div class="field"><span class="label">Password</span><div class="input">••••••••••••</div></div>
+  <div class="forgot">Forgot password?</div>
+  <button class="btn">Sign in</button>
+  <div class="foot">Don't have an account? <a>Sign up</a></div>
+</div></div></body></html>

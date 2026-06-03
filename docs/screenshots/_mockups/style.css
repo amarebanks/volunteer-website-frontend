@@ -1,0 +1,107 @@
+/* Shared styling for Volunteer Website demo mockups.
+   Brand palette mirrors the real app (Layout.tsx / dashboard.jsx). */
+:root {
+  --navy: #22577a;
+  --teal: #38a3a5;
+  --green: #26a96c;
+  --mint: #80ed99;
+  --sand: #f0eadf;
+  --ink: #1f2d36;
+  --muted: #5f7682;
+  --line: #e4e9ec;
+  --bg: #f5f7f8;
+  --card: #ffffff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+.page { width: 1280px; min-height: 100%; }
+
+/* ---------- App header (logged-in views) ---------- */
+.appbar {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--teal); color: #fff; padding: 0 26px; height: 78px;
+}
+.brand { display: flex; align-items: center; gap: 14px; }
+.brand .logo {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, var(--mint), var(--green));
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: inset 0 0 0 3px rgba(255,255,255,.35);
+}
+.brand .logo svg { width: 30px; height: 30px; }
+.brand .word { font-size: 30px; font-weight: 300; letter-spacing: .5px; }
+.navlinks { display: flex; gap: 8px; }
+.navlinks a {
+  color: #fff; text-decoration: none; font-size: 15px;
+  padding: 7px 12px; border-radius: 8px; opacity: .92;
+}
+.navlinks a.active { background: #fff; color: var(--navy); font-weight: 600; opacity: 1; }
+.appbar-right { display: flex; align-items: center; gap: 16px; }
+.appbar-right .logout { color: #fff; font-size: 14px; opacity: .9; cursor: pointer; }
+.avatar {
+  width: 46px; height: 46px; border-radius: 50%; border: 2px solid #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; color: #fff; font-size: 16px;
+}
+
+/* ---------- Generic content ---------- */
+.content { padding: 30px 40px 46px; }
+.h1 { font-size: 28px; font-weight: 700; color: var(--navy); }
+.sub { color: var(--muted); font-size: 15px; margin-top: 4px; }
+.row { display: flex; gap: 22px; }
+.card {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 16px; box-shadow: 0 6px 18px rgba(34,87,122,.06);
+}
+.pad { padding: 22px 24px; }
+.card-title { font-size: 17px; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; border: none; cursor: pointer;
+  background: var(--green); color: #fff; font-weight: 600; font-size: 15px;
+  padding: 11px 18px; border-radius: 10px;
+}
+.btn.alt { background: var(--navy); }
+.btn.ghost { background: #fff; color: var(--navy); border: 1.5px solid var(--navy); }
+
+.chip {
+  display: inline-block; padding: 5px 12px; border-radius: 999px;
+  background: #e8f6ef; color: var(--green); font-size: 13px; font-weight: 600;
+  border: 1px solid #cdebdb;
+}
+.chip.skill { background: #eaf3f7; color: var(--navy); border-color: #d4e6ef; }
+
+.badge { font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; }
+.badge.low { background: #e6eef2; color: #2a4a5b; }
+.badge.medium { background: #fff3c6; color: #8a6d00; }
+.badge.high { background: #ffe1d6; color: #b5462a; }
+.badge.critical { background: #ffd7d7; color: #b32424; }
+
+/* score chips matching Matching.tsx thresholds */
+.score { font-size: 14px; font-weight: 700; padding: 6px 14px; border-radius: 999px; }
+.score.s90 { background: #cff6d8; color: #1e7a45; }
+.score.s80 { background: #fff3c6; color: #8a6d00; }
+.score.s0  { background: #e6eef2; color: #2a4a5b; }
+
+.field { margin-bottom: 16px; }
+.label { display: block; font-size: 13px; font-weight: 600; color: var(--muted); margin-bottom: 6px; }
+.input {
+  width: 100%; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 10px;
+  font-size: 15px; color: var(--ink); background: #fff;
+}
+.input.placeholder { color: #9aa9b1; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 13px 14px; font-size: 14px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .4px; }
+
+.thumb { width: 100%; height: 132px; border-radius: 12px 12px 0 0; }
+.muted { color: var(--muted); }
+.small { font-size: 13px; }
+.bar { height: 8px; border-radius: 999px; background: #e9eef1; overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--teal); }

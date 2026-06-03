@@ -1,0 +1,72 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+  .egrid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 20px; }
+  .ecard { overflow:hidden; padding:0; }
+  .ecard .body { padding: 16px 18px 18px; }
+  .ecard h3 { font-size: 17px; color: var(--navy); }
+  .meta { color: var(--muted); font-size: 13px; margin: 5px 0; display:flex; gap:6px; align-items:center; }
+  .skills { display:flex; flex-wrap:wrap; gap:6px; margin: 10px 0 14px; }
+  .capline { display:flex; justify-content:space-between; font-size:12px; color:var(--muted); margin-bottom:5px; }
+  .searchbar { display:flex; gap:12px; margin-top:16px; }
+  .searchbar .input { flex:1; }
+</style></head>
+<body><div class="page">
+  <div class="appbar">
+    <div class="brand"><div class="logo"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21s-7.5-4.6-10-9.3C.3 8 2 4.5 5.3 4.5c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.5 19.7 8 18 11.7 15.5 16.4 12 21 12 21z"/></svg></div><div class="word">Volunteer</div></div>
+    <div class="navlinks"><a>Profile</a><a class="active">Events</a><a>About</a><a>Contact</a></div>
+    <div class="appbar-right"><div class="avatar" style="background:#26a96c">JL</div><div class="logout">Logout</div></div>
+  </div>
+  <div class="content">
+    <div class="h1">Browse events</div>
+    <div class="sub">Find upcoming opportunities near you and sign up in one click.</div>
+    <div class="searchbar">
+      <div class="input placeholder">🔍&nbsp; Search events, organizations…</div>
+      <div class="input placeholder" style="max-width:180px">City: Houston</div>
+      <button class="btn alt">Filter</button>
+    </div>
+    <div class="egrid">
+      <!-- card 1 -->
+      <div class="card ecard">
+        <div class="thumb" style="background:linear-gradient(135deg,#38a3a5,#22577a)"></div>
+        <div class="body">
+          <div style="display:flex;justify-content:space-between;align-items:start"><h3>Community Food Drive</h3><span class="badge high">High</span></div>
+          <div class="meta">🏢 Houston Food Bank</div>
+          <div class="meta">📅 Sat, Jun 14 · 9:00–13:00</div>
+          <div class="meta">📍 535 Portwall St, Houston</div>
+          <div class="skills"><span class="chip skill">Lifting</span><span class="chip skill">Event Setup</span></div>
+          <div class="capline"><span>32 / 50 volunteers</span><span>64%</span></div>
+          <div class="bar"><i style="width:64%"></i></div>
+          <button class="btn" style="width:100%;justify-content:center;margin-top:14px">Sign up</button>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="card ecard">
+        <div class="thumb" style="background:linear-gradient(135deg,#26a96c,#80ed99)"></div>
+        <div class="body">
+          <div style="display:flex;justify-content:space-between;align-items:start"><h3>After-School Tutoring</h3><span class="badge medium">Medium</span></div>
+          <div class="meta">🏢 Lindale Community Center</div>
+          <div class="meta">📅 Wed, Jun 18 · 17:00–20:00</div>
+          <div class="meta">📍 1101 Coltart Ave, Houston</div>
+          <div class="skills"><span class="chip skill">Tutoring</span><span class="chip skill">Spanish</span></div>
+          <div class="capline"><span>9 / 15 volunteers</span><span>60%</span></div>
+          <div class="bar"><i style="width:60%"></i></div>
+          <button class="btn" style="width:100%;justify-content:center;margin-top:14px">Sign up</button>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="card ecard">
+        <div class="thumb" style="background:linear-gradient(135deg,#22577a,#26a96c)"></div>
+        <div class="body">
+          <div style="display:flex;justify-content:space-between;align-items:start"><h3>Park Restoration Day</h3><span class="badge low">Low</span></div>
+          <div class="meta">🏢 Bayou Greenways</div>
+          <div class="meta">📅 Sun, Jun 22 · 8:00–12:00</div>
+          <div class="meta">📍 Buffalo Bayou Park, Houston</div>
+          <div class="skills"><span class="chip skill">Gardening</span><span class="chip skill">Driving</span></div>
+          <div class="capline"><span>18 / 40 volunteers</span><span>45%</span></div>
+          <div class="bar"><i style="width:45%"></i></div>
+          <button class="btn" style="width:100%;justify-content:center;margin-top:14px">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></body></html>
